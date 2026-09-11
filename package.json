@@ -1,0 +1,29 @@
+{
+  "name": "ts-safe-parse",
+  "version": "1.0.0",
+  "description": "Zero-dependency safe JSON/YAML-like parser that never throws, returning Result<T, ParseError> discriminated unions.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist-test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.9"
+  },
+  "license": "MIT"
+}
